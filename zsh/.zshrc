@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias todo="nvim ~/Notes-Temp/ToDo.txt"
 #
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
