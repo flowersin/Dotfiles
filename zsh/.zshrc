@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias todo="nvim ~/Notes-Temp/ToDo.txt"
+alias scratch="nvim ~/Notes-Temp/Scratchpad.txt"
+alias python=python3
 #
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
