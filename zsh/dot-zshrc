@@ -104,7 +104,8 @@ source $ZSH/oh-my-zsh.sh
 alias todo="nvim ~/Notes-Temp/ToDo.txt"
 alias scratch="nvim ~/Notes-Temp/Scratchpad.txt"
 alias python=python3
-#
+alias stow="stow --dotfiles"
+
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
 #
