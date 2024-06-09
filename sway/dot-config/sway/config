@@ -222,6 +222,9 @@ exec swaymsg 'workspace 2; exec foot;'
 exec swaymsg 'workspace 3; exec foot;'
 exec swaymsg 'workspace 5; exec flatpak run com.spotify.Client;'
 
+# Startup script
+exec /home/es/Scripts/startup
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
