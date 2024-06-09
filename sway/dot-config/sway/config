@@ -201,6 +201,27 @@ bindsym $mod+r mode "resize"
 bindsym $mod+greater move workspace to output right
 bindsym $mod+less move workspace to output left
 
+# Enable Numlock on startup:
+input type:keyboard xkb_numlock enabled
+
+# Assign workspaces to specific outputs, dash should mean "Match to any output, if first option isn't availible"
+workspace 1 output 'HP Inc. HP V27c G5 CNC2321XZ4' -
+workspace 2 output 'Dell Inc. DELL P1911 8JCGH169417L' -
+workspace 3 output 'Dell Inc. DELL P1911 8JCGH169417L' -
+workspace 4 output 'Dell Inc. DELL P1911 8JCGH169417L' -
+workspace 5 output 'Dell Inc. DELL P1911 8JCGH169417L' -
+workspace 10 output 'Dell Inc. DELL P1911 8JCGH169417L' -
+
+# Assign applications to different workspaces so they start there
+assign [class=discord] workspace 4
+
+
+# Start applications
+exec swaymsg 'workspace 1; exec firefox;'
+exec swaymsg 'workspace 2; exec foot;'
+exec swaymsg 'workspace 3; exec foot;'
+exec swaymsg 'workspace 5; exec flatpak run com.spotify.Client;'
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
