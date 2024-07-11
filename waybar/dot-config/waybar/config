@@ -27,11 +27,11 @@
         "tray"
     ],
     // Modules configuration
-    // "sway/workspaces": {
+    "sway/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
+        "format": " {value} ",
     //     "format-icons": {
     //         "1": "",
     //         "2": "",
@@ -42,7 +42,7 @@
     //         "focused": "",
     //         "default": ""
     //     }
-    // },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
