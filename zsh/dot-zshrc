@@ -105,6 +105,8 @@ alias todo="nvim ~/Notes/ToDo.txt"
 alias scratch="nvim ~/Notes/Scratchpad.txt"
 alias python=python3
 alias stow="stow --dotfiles"
+alias stodo="nvim ~/School/ToDo-School.txt"
+alias dated="nvim $(date -I).txt"
 
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
