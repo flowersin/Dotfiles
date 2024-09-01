@@ -31,6 +31,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
+output 'Dell Inc. DELL P1911 8JCGH169417L' pos 0 -360 transform 90
+output 'HP Inc. HP V27c G5 CNC2321XZ4' pos 900 0 
 output * bg /usr/share/backgrounds/anime-city-night.png fill
 #
 # Example configuration:
