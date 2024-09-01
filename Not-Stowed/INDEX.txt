@@ -1,0 +1,1 @@
+./SDDM-Theme: /usr/share/sddm/themes/
