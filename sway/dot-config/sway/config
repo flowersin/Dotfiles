@@ -34,7 +34,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 output 'Dell Inc. DELL P1911 8JCGH169417L' pos 0 0 transform 90
 output 'HP Inc. HP V27c G5 CNC2321XZ4' pos 900 360 
 output 'Dell Inc. DELL E2211H 19G4H14E0YMM' pos 2820 360
-output * bg /usr/share/backgrounds/anime-city-night.png fill
+output * bg /usr/share/backgrounds/background fill
 #
 # Example configuration:
 #
