@@ -21,7 +21,7 @@
      // "cpu",
      // "memory",
      // "temperature",
-        "backlight",
+     // "backlight",
      // "sway/language",
         "battery",
         "tray"
@@ -131,7 +131,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{percent}%",
         "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
     },
     "battery": {
@@ -141,7 +141,7 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         // "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -162,7 +162,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}%",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": " {icon}",
         // "format-muted": " {format_source}",
