@@ -110,6 +110,7 @@ alias python=python3
 alias stow="stow --dotfiles"
 alias stodo="nvim ~/School/ToDo-School.txt"
 alias dated="nvim $(date -I).txt"
+alias wttr="curl wttr.in"
 
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
