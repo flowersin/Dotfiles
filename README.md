@@ -22,9 +22,6 @@ For example, `./sway/` belongs to the Stow package `sway`, where the file `./swa
 - **Foot** Terminal Emulator
 - **GTK 3** for applications that use GTK 3.
 - **Hyfetch** Neofetch, but with pride flags!
-- **Neofetch** needs no explanation
-  - I Haven't used neofetch since the project was dicontinued
-  - May be removed at a later date
 - **Neovim** is better than emacs!
   - Located in `./nvim/`
 - **Sway WM**, I3WM, but with Wayland
