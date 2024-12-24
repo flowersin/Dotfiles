@@ -23,4 +23,5 @@ For example, `./sway/` belongs to the Stow package `sway`, where the file `./swa
 - **Neovim** is better than emacs!
   - Located in `./nvim/`
 - **Sway WM**, I3WM, but with Wayland
+- **Waybar** status bar for Sway WM
 - **ZSH** The shell I actually use!
