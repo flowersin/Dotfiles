@@ -17,8 +17,6 @@ For example, `./sway/` belongs to the Stow package `sway`, where the file `./swa
 - Edit by editing the files in the git directory, and Stow-ing again whenever new files are added.
 ## Applications
 - **Bash** shell
-- **Fastfetch**, used by hyfetch
-  - May be moved to `./hyfetch` at a later point
 - **Foot** Terminal Emulator
 - **GTK 3** for applications that use GTK 3.
 - **Hyfetch** Neofetch, but with pride flags!
