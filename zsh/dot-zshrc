@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin/
-export PATH=$PATH:$HOME/Scripts
-export PATH=$PATH:$HOME/gems/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -111,6 +109,11 @@ alias stow="stow --dotfiles"
 alias stodo="nvim ~/School/ToDo-School.txt"
 alias dated="nvim $(date -I).txt"
 alias wttr="curl wttr.in"
+
+# Used to get ruby stuff working...?
+eval "$(rbenv init - zsh)"
+export PATH=$PATH:$HOME/Scripts
+export PATH=$PATH:$HOME/gems/bin
 
 # Autorun neofetch
 # neofetch --catimg $HOME/Images/transflagsquare.png
