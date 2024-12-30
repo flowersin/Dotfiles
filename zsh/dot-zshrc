@@ -109,6 +109,7 @@ alias stow="stow --dotfiles"
 alias stodo="nvim ~/School/ToDo-School.txt"
 alias dated="nvim $(date -I).txt"
 alias wttr="curl wttr.in"
+alias testsite="firefox 127.0.0.1:4000 && bundle exec jekyll s" # I need to figure out how to start jekyll, then run firefox, but not have to wait for jekyll to finish...?
 
 # Used to get ruby stuff working...?
 eval "$(rbenv init - zsh)"
