@@ -215,6 +215,9 @@ exec swaymsg 'workspace 1; exec firefox;'
 exec swaymsg 'workspace 2; exec foot;'
 exec swaymsg 'workspace 3; exec foot;'
 
+# Start windows floating
+for_window [app_id="pomodorolm"] floating enable
+
 # Startup script
 exec /home/es/Scripts/startup
 
