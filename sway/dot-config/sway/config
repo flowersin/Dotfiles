@@ -229,7 +229,7 @@ font monospace 10
 client.focused #4c7899 #28557799 #ffffff #2e9ef4 #285577
 client.focused_inactive #333333 #24242499 #ffffff #484e50 #5f676a
 client.focused_tab_title #333333 #5f676a99 #ffffff
-client.unfocused  #333333 #24242499 #888888 #292d2e #222222
+client.unfocused  #24242499 #24242499 #ffffff #292d2e #222222
 client.urgent #2f343a #90000099 #ffffff #900000 #900000
 
 # Include configs from 3 locations:
