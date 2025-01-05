@@ -1,8 +1,9 @@
 * {
     border: none;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: Monospace;
+    font-size: 14px;
+    border-radius: 6;
 }
 
 window#waybar {
@@ -36,7 +37,6 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 0;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -51,7 +51,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 3px;
     background-color: transparent;
     color: #ffffff;
 }
@@ -96,9 +96,8 @@ button:hover {
 }
 
 #window,
-#workspaces {
-    margin: 0 4px;
-}
+#workspaces,
+
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
