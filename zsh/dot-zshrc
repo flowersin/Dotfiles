@@ -113,7 +113,7 @@ alias testsite="firefox 127.0.0.1:4000 && bundle exec jekyll s" # I need to figu
 alias pd="pomodoro" # Used with openpomodoro-cli
 
 # Used to get ruby stuff working...?
-eval "$(rbenv init - zsh)"
+eval "$(rbenv init - zsh)" 2>/dev/null
 export PATH=$PATH:$HOME/Scripts
 export PATH=$PATH:$HOME/gems/bin
 
@@ -121,4 +121,4 @@ export PATH=$PATH:$HOME/gems/bin
 # neofetch --catimg $HOME/Images/transflagsquare.png
 #
 # Autorun hyfetch
-hyfetch
+hyfetch 2>/dev/null
