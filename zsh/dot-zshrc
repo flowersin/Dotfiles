@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin/
+export PASSWD_FILE=$HOME/.smbkey # Used for SMB authentication
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -111,9 +112,10 @@ alias dated="nvim $(date -I).txt"
 alias wttr="curl wttr.in"
 alias testsite="firefox 127.0.0.1:4000 && bundle exec jekyll s" # I need to figure out how to start jekyll, then run firefox, but not have to wait for jekyll to finish...?
 alias pd="pomodoro" # Used with openpomodoro-cli
+alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
 
 # Used to get ruby stuff working...?
-eval "$(rbenv init - zsh)" 2>/dev/null
+eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
 export PATH=$PATH:$HOME/Scripts
 export PATH=$PATH:$HOME/gems/bin
 
