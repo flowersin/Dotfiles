@@ -110,7 +110,7 @@ alias stow="stow --dotfiles"
 alias stodo="nvim ~/School/ToDo-School.txt"
 alias dated="nvim $(date -I).txt"
 alias wttr="curl wttr.in"
-alias testsite="firefox 127.0.0.1:4000 && bundle exec jekyll s" # I need to figure out how to start jekyll, then run firefox, but not have to wait for jekyll to finish...?
+alias testsite="bundle exec jekyll s" # Run Jekyll; for testing website
 alias pd="pomodoro" # Used with openpomodoro-cli
 alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
 
