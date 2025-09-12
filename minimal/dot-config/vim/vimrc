@@ -1,5 +1,9 @@
+" Needed for VimWiki
 set nocompatible
 filetype plugin on
 syntax on
+" Add relative line numbers + current line number
 set number
 set relativenumber
+" Have tabs be 4 spaces wide rather than default 8
+set tabstop=4
