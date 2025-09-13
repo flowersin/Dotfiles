@@ -8,7 +8,7 @@ export PASSWD_FILE=$HOME/.smbkey # Used for SMB authentication
 export GEM_HOME=$HOME/gems/
 
 # Enable autocomplete
-autoload -U compinit
+autoload -Uz compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
@@ -42,9 +42,9 @@ alias pd="pomodoro" # Used with openpomodoro-cli
 alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
 
 # Used to get ruby stuff working...?
-eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
-export PATH=$PATH:$HOME/Scripts
-export PATH=$PATH:$HOME/gems/bin
+# eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
+# export PATH=$PATH:$HOME/Scripts
+# export PATH=$PATH:$HOME/gems/bin
 
 # Autorun hyfetch
 hyfetch 2>/dev/null
