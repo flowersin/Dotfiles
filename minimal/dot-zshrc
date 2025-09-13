@@ -1,11 +1,10 @@
 # Enable colors
 autoload -U colors && colors
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin/
 export PASSWD_FILE=$HOME/.smbkey # Used for SMB authentication
-
-export GEM_HOME=$HOME/gems/
 
 # Enable autocomplete
 autoload -Uz compinit
@@ -20,13 +19,7 @@ HYPHEN_INSENSITIVE="true"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# You can also set it to another string to have that shown instead of the default red dots.
-# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-COMPLETION_WAITING_DOTS="true"
-
-# Preferred editor for local and remote sessions
+# Preferred editor
 export EDITOR='vim'
 
 # Aliases
@@ -47,6 +40,7 @@ alias vpnon="sudo tailscale set --exit-node="
 # eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
 # export PATH=$PATH:$HOME/Scripts
 # export PATH=$PATH:$HOME/gems/bin
+# export GEM_HOME=$HOME/gems/
 #
 # History File
 HISTFILE=~/.zsh_history
