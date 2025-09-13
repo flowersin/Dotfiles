@@ -40,11 +40,27 @@ alias wttr="curl wttr.in"
 alias testsite="bundle exec jekyll s" # Run Jekyll; for testing website
 alias pd="pomodoro" # Used with openpomodoro-cli
 alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
+alias vpnon="sudo tailscale set --exit-node=us-den-wg-203.mullvad.ts.net"
+alias vpnon="sudo tailscale set --exit-node="
 
 # Used to get ruby stuff working...?
 # eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
 # export PATH=$PATH:$HOME/Scripts
 # export PATH=$PATH:$HOME/gems/bin
+#
+# History File
+HISTFILE=~/.zsh_history
+
+# How many commands to store in history file
+HISTSIZE=10000
+SAVEHIST=10000
+
+# Enable shared history
+setopt SHARE_HISTORY
+
+# History-based autocompletiong
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
 
 # Autorun hyfetch
 hyfetch 2>/dev/null
