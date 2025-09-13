@@ -1,6 +1,15 @@
 # Enable colors
 autoload -U colors && colors
 
+# Fetch git info, for prompt below
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%b '
+
+# Prompt
+PROMPT="%F{159}%n%f%F{218}@%f%F{7}%m%f %F{218}%~%f%F{159}$%f "
+RPROMPT="%F{8}$vcs_info_msg_0_%f %F{7}%t%f"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin/
@@ -12,7 +21,6 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 
-# Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
