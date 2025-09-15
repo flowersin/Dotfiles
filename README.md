@@ -1,4 +1,5 @@
 # Ellie's Linux Dotfiles
+!!! This is outdated, I will updated once I get a chance !!!
 ## What is this?
 These are my personal configuration files I use on my Fedora Linux machines.
 ## What is the structure here?
