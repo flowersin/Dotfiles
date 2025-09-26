@@ -64,5 +64,10 @@ setopt SHARE_HISTORY
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
+# Autorun tmux if not already in tmux
+if [ "$TMUX" = "" ]; then
+	tmux;
+fi
+
 # Autorun hyfetch
 hyfetch 2>/dev/null
