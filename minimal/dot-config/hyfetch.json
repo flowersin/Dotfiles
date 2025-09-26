@@ -6,10 +6,7 @@
     "color_align": {
         "mode": "horizontal",
         "custom_colors": [],
-        "fore_back": [
-            2,
-            1
-        ]
+        "fore_back": null
     },
     "backend": "fastfetch",
     "args": null,
