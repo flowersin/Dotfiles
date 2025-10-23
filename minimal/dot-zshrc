@@ -42,7 +42,8 @@ alias testsite="bundle exec jekyll s" # Run Jekyll; for testing website
 alias pd="pomodoro" # Used with openpomodoro-cli
 alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
 alias vpnon="sudo tailscale set --exit-node=us-den-wg-203.mullvad.ts.net"
-alias vpnon="sudo tailscale set --exit-node="
+alias vpnoff="sudo tailscale set --exit-node="
+alias nokvm="sudo modprobe -r kvm-intel kvm" # Used to disable KVM Kernel extension for virtualbox
 
 # Used to get ruby stuff working...?
 # eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
@@ -65,9 +66,9 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
 # Autorun tmux if not already in tmux
-if [ "$TMUX" = "" ]; then
-	tmux;
-fi
+# if [ "$TMUX" = "" ]; then
+#	tmux;
+# fi
 
 # Autorun hyfetch
 hyfetch 2>/dev/null
