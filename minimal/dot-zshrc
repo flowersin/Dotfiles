@@ -17,8 +17,8 @@ export PASSWD_FILE=$HOME/.smbkey # Used for SMB authentication
 
 # Enable autocomplete
 autoload -Uz compinit
-zstyle ':completion:*' menu select
 zmodload zsh/complist
+zstyle ':completion:*' menu select
 compinit
 
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -44,6 +44,7 @@ alias mullcheck="curl -sS https://am.i.mullvad.net/connected"
 alias vpnon="sudo tailscale set --exit-node=us-den-wg-203.mullvad.ts.net"
 alias vpnoff="sudo tailscale set --exit-node="
 alias nokvm="sudo modprobe -r kvm-intel kvm" # Used to disable KVM Kernel extension for virtualbox
+alias eleventy="npx @11ty/eleventy"
 
 # Used to get ruby stuff working...?
 # eval "$(rbenv init - zsh 2>/dev/null)" 2>/dev/null
@@ -62,8 +63,8 @@ SAVEHIST=10000
 setopt SHARE_HISTORY
 
 # History-based autocompletiong
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
 
 # Autorun tmux if not already in tmux
 # if [ "$TMUX" = "" ]; then
@@ -72,3 +73,7 @@ bindkey '\e[B' history-search-forward
 
 # Autorun hyfetch
 hyfetch 2>/dev/null
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
